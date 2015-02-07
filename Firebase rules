@@ -1,0 +1,96 @@
+{
+    "rules": {
+        ".read": true,
+        ".write": true,
+        "learning-center-app":{
+          "Users":{
+            "Administrators":{
+             "$AuthID":{
+               ".validate":"newData.val().matches(/^.*@.*$/)"
+             }
+            },
+            "$UserID":{
+              ".validate":"$UserID.matches(/^.*@.*$/)",
+            "Name":{
+              ".validate":"newData.isString()"
+            },
+            "Password":{
+             ".validate":"newData.isString()" 
+            },
+            "IsATutor":{
+              "Schedule":{
+                "$Date":{
+                 ".validate": "newData.val().matches(/^(19|20)[0-9][0-9][-\\/. ](0[1-9]|1[012])[-\\/. ](0[1-9]|[12][0-9]|3[01])$/)",
+                 "$Hours":{
+                   ".validate": "newData.val().matches(/^([012])$/)",
+                   "Name":{
+                   ".validate":"newData.isString()"
+                   },
+                   "With":{
+                   ".validate":"root.child('learning-center-app/Users/').hasChild(newData.val())"
+                   }
+                 }
+                }
+              },
+              "TutorEvaluation":{
+                "$ID":{
+                  "AttitudeOfTutoree":{
+                    ".validate":"newData.isString() &&newData.val().matches(/Frustrated|Positive|Negative|Hostile|Other/)" 
+                  },
+                  "Comment":{
+                   ".validate":"newData.isString()" 
+                  },
+                  "Date":{
+                    ".validate":"newData.val().matches(/^(19|20)[0-9][0-9][-\\/. ](0[1-9]|1[012])[-\\/. ](0[1-9]|[12][0-9]|3[01])$/)"
+                  },
+                  "Professor":{
+                   ".validate":"newData.isString()" 
+                  },
+                  "Time":{
+                    ".validate":"newData.val().matches(/^[0-6][0-9]-[0-6][0-9]$/)"
+                  },
+                  "Topic":{
+                    ".validate":"newData.isString()"
+                  }
+                }
+              }
+            },
+            "SessionEvaluation":{
+              "$ID":{
+                "Comment":{
+                   ".validate":"newData.isString()" 
+                  },
+                "Topic":{
+                    ".validate":"newData.isString()"
+                  },
+                  "Date":{
+                    ".validate":"newData.val().matches(/^(19|20)[0-9][0-9][-\\/. ](0[1-9]|1[012])[-\\/. ](0[1-9]|[12][0-9]|3[01])$/)"
+                  },
+                  "Atmosphere":{
+                    ".validate":"newData.val().matches(/[1-5]/)"
+                  },
+                  "Overall":{
+                    ".validate":"newData.val().matches(/[1-5]/)"
+                  },
+                  "Result":{
+                    ".validate":"newData.val().matches(/[1-5]/)"
+                  },
+                  "TutorAbility":{
+                    ".validate":"newData.val().matches(/[1-5]/)"
+                  },
+                  "TutorAttitude":{
+                    ".validate":"newData.val().matches(/[1-5]/)"
+                  },
+                  "ClassYear":{
+                    ".validate":"newData.val().matches(/(19|20)[0-9][0-9]/)"
+                  },
+                  "ESL":{
+                    ".validate":"newData.val().matches(/(1|0)/)"
+                  }
+              }
+            }
+            }
+          }
+        }
+    }
+}

@@ -1,0 +1,351 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/edittext_tutor_eval_classyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/class_year"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_esl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edittext_tutor_eval_classyear"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/esl" />
+
+        <EditText
+            android:id="@+id/edittext_tutor_eval_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_tutor_eval_classyear"
+            android:hint="@string/purpose_of_visit"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tutor_eval_knowledge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_atmosphere_radiogroup"
+            android:paddingLeft="10dp"
+            android:text="@string/tutor_eval_knowledge"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tutor_eval_understanding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_knowledge_radiogroup"
+            android:paddingLeft="10dp"
+            android:text="@string/tutor_eval_student_understanding"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tutor_eval_general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_understanding_radiogroup"
+            android:paddingLeft="10dp"
+            android:text="@string/tutor_eval_general"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tutor_eval_attitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_explaination"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="10dp"
+            android:text="@string/tutor_eval_attitue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tutor_eval_explaination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/edittext_tutor_eval_purpose"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/tutor_eval_explaination" />
+
+        <RadioGroup
+            android:id="@+id/tutor_eval_attitue_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_attitude"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <RadioButton
+                android:id="@+id/tutor_eval_attitue_radiogroup_radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/one" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_attitue_radiogroup_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_attitue_radiogroup_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_attitue_radiogroup_radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_attitue_radiogroup_radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/tutor_eval_general_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_general"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <RadioButton
+                android:id="@+id/tutor_eval_general_radiogroup_radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/one" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_general_radiogroup_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_general_radiogroup_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_general_radiogroup_radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_general_radiogroup_radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/tutor_eval_atmosphere_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_atmosphere"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <RadioButton
+                android:id="@+id/tutor_eval_atmosphere_radiogroup_radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/one" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_atmosphere_radiogroup_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_atmosphere_radiogroup_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_atmosphere_radiogroup_radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_atmosphere_radiogroup_radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/tutor_eval_understanding_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_understanding"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <RadioButton
+                android:id="@+id/tutor_eval_understanding_radiogroup_radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/one" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_understanding_radiogroup_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_understanding_radiogroup_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_understanding_radiogroup_radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_understanding_radiogroup_radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/tutor_eval_knowledge_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_knowledge"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <RadioButton
+                android:id="@+id/tutor_eval_knowledge_radiogroup_radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/one" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_knowledge_radiogroup_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_knowledge_radiogroup_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_knowledge_radiogroup_radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four" />
+
+            <RadioButton
+                android:id="@+id/tutor_eval_knowledge_radiogroup_radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tutor_eval_atmosphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tutor_eval_attitue_radiogroup"
+            android:paddingLeft="10dp"
+            android:text="@string/tutor_eval_atmosphere"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edittext_tutor_eval_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutor_eval_general_radiogroup"
+            android:layout_marginTop="10dp"
+            android:hint="@string/tutor_eval_addtional_comment"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edittext_tutor_eval_tutor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext_tutor_eval_comment"
+            android:layout_marginTop="10dp"
+            android:ems="6"
+            android:hint="@string/name_tutor_optional"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/tutor_eval_commit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_tutor_eval_your_name"
+            android:layout_centerInParent="true"
+            android:text="@string/commit" />
+
+        <EditText
+            android:id="@+id/edittext_tutor_eval_your_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edittext_tutor_eval_tutor_name"
+            android:layout_alignBottom="@+id/edittext_tutor_eval_tutor_name"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tutor_eval_commit_button"
+            android:ems="5"
+            android:hint="@string/name_you_optional"
+            android:inputType="text"
+            android:paddingRight="10dp"
+            android:textSize="18sp" >
+        </EditText>
+    </RelativeLayout>
+
+</ScrollView>

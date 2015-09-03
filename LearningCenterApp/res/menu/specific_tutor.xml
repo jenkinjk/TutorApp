@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.learningcenterapp.SpecificTutorActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/specific_tutor_search"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="never"
+        android:title="@string/calendar_search">
+    </item>
+    <item
+        android:id="@+id/specific_tutor_notification_test"
+        android:showAsAction="always"
+        android:title="@string/notification_test">
+    </item>
+
+</menu>

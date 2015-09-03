@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.learningcenterapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LogInActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/title_activity_calender" >
+        </activity>
+        <activity
+            android:name=".TutorScheduleActivity"
+            android:label="@string/title_activity_tutor_schedule" >
+        </activity>
+        <activity
+            android:name=".SpecificTutorActivity"
+            android:label="@string/title_activity_specific_tutor" >
+        </activity>
+        <activity
+            android:name=".TutorEvalFormActivity"
+            android:label="@string/title_activity_tutor_eval_form" >
+        </activity>
+        <activity
+            android:name=".PeerTutorEvalForm"
+            android:label="@string/title_activity_peer_tutor_eval_form" >
+        </activity>
+        <activity
+            android:name=".ESLTutorEvalFormActivity"
+            android:label="@string/title_activity_esltutor_eval_form" >
+        </activity>
+        <activity
+            android:name=".AdministratorActivity"
+            android:label="@string/title_activity_administrator" >
+        </activity>
+        <activity
+            android:name=".MakeTutorActivity"
+            android:label="@string/title_activity_make_tutor" >
+        </activity>
+        <activity
+            android:name=".MakeScheduleActivity"
+            android:label="@string/title_activity_make_schedule" >
+        </activity>
+        <activity
+            android:name=".MakeTutorScheduleActivity"
+            android:label="@string/title_activity_make_tutor_schedule" >
+        </activity>
+    </application>
+
+    <WebView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/esl_tutor_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</manifest>

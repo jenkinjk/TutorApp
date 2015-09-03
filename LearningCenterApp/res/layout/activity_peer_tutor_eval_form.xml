@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/peer_tutor_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:ems="8"
+        android:hint="@string/student"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/peer_tutor_class_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/peer_tutor_student"
+        android:layout_alignBottom="@+id/peer_tutor_student"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/peer_tutor_student"
+        android:hint="@string/class_year"
+        android:inputType="number"
+        android:paddingRight="10dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/peer_tutor_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peer_tutor_student"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="8"
+        android:hint="@string/date" />
+
+    <EditText
+        android:id="@+id/peer_tutor_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/peer_tutor_student"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/peer_tutor_date"
+        android:hint="@string/time" />
+
+    <EditText
+        android:id="@+id/peer_tutor_professor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peer_tutor_date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="8"
+        android:hint="@string/professor" />
+
+    <EditText
+        android:id="@+id/peer_tutor_cour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peer_tutor_time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/peer_tutor_professor"
+        android:ems="5"
+        android:hint="@string/course" />
+
+    <EditText
+        android:id="@+id/peer_tutor_help_needed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/peer_tutor_professor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/peer_tutor_helped_needed_explaination"
+        android:inputType="textMultiLine" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/peer_tutor_tutor_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/peer_tutor_commit"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:hint="@string/username" />
+
+    <Button
+        android:id="@+id/peer_tutor_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/commit" />
+
+    <EditText
+        android:id="@+id/peer_tutor_attitude_of_tutee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/peer_tutor_tutor_username"
+        android:layout_alignLeft="@+id/peer_tutor_tutor_username"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/peer_tutor_attitude_of_tutee" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
